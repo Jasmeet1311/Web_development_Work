@@ -1,0 +1,96 @@
+<!-- Designing Navbar and display property  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar and Display Property</title>
+    <style>
+        .navbar ul{
+            margin: 12px;
+        }
+        .navbar{
+            border: 3px solid black;
+            background-color: #23cbeb;
+            border-radius: 30px;
+            height: 51px;
+        }
+        .navbar li{
+            float: right;
+            list-style: none;
+            padding: 6px;
+            margin-left: 23px;
+        }
+        .navbar a{
+            text-decoration: none;
+            color: #5401c1;
+        }
+        .navbar a:hover{
+            color: white;
+        }
+        .navbar input{
+            border: 2px solid black;
+            border-radius: 4px;
+            width:284px;
+        }
+        h1{
+            color: blue;
+            margin-top: 9px;
+            text-align: center;
+        
+        }
+        strong{
+            color: #bf48fb;
+            display: block;
+            text-align: center;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+        }
+        p{
+            border: 2px solid rgb(35, 11, 11);
+            background-color: #ffffc3;
+        }
+        .container{
+            border: 2px solid black;
+            width:435px;
+            display:inline-block;
+            text-align: center;
+            background-color: #d8f7f7;
+            margin-left: 4px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li> <a href="#">Home</a></li>
+                <li> <a href="/file_css_display_prop.html" target="_blank">About</a></li>
+                <li> <a href="#">Services</a></li>
+                <li> <a href="#">Contact Us</a></li>
+                <div>
+                    <input type="text" name="Search" id="Search" placeholder="Search this website">
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <h1>CSS Display property</h1>
+    <p>  <strong>IMPORTANT:</strong> <br> 1)We can set width to block element and not to inline element. but we can make them block by { display: block} property. So that we don't have to use margin and padding extensively.
+        <br>
+        2)But what if we want that element to position itself (OR occupy space) like inline element and also get adjusted by width? for this we use {display:inline-block} property.</p>
+
+    <div class="container">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa dolore, quam ipsam asperiores alias optio voluptas fugiat, repellat, neque aperiam cumque perferendis.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit laudantium quidem dolor cupiditate praesentium voluptates veniam dicta quibusdam optio, reiciendis, inventore ratione!
+    </div>
+    <div class="container">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates in, nostrum illo, accusamus incidunt modi dicta inventore nulla sunt itaque necessitatibus facilis!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque cum assumenda, recusandae non necessitatibus nulla sapiente ullam dolorem explicabo quos nobis esse?
+    </div>
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore beatae necessitatibus commodi atque maiores eos? At placeat dolores ipsa dolore tempora ipsum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum architecto accusantium placeat ipsam optio similique nisi, fuga adipisci dignissimos iusto, aliquid aliquam!
+    </div>
+    
+</body>
+</html>

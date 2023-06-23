@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings in JavaScript</title>
+</head>
+<body>
+    <h2>This is Heading</h2>
+    <div id="content"></div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias ipsa sint adipisci animi sapiente officia consectetur laudantium quidem, dolorem amet atque, et nesciunt alias impedit fugiat nemo id cupiditate pariatur cum. Aperiam, perferendis illum.</p>
+    <script>
+        // var a="This is a string";
+        // var b ="Jasmeet's variable";
+        // console.log(b);
+        // var temp=`This is ${b}`;
+        // // We can use single quotes and double quotes between backticks
+        // console.log(temp);
+        var str=new String('This is Jasmeet');
+        // console.log(str);
+        // console.log(str.length);
+        // Add HTML from JavaScript
+        document.getElementById('content').innerHTML=('<h3>This is Heading3</h3>')
+
+        // First occurance of a substring
+        // var position = str.indexOf('is');
+        // console.log(position);
+
+        // // Last occurance of a string
+        // var pos=str.lastIndexOf('is');
+        // console.log(pos);
+
+        // // String slicing
+        // var slice = str.slice(1,7);
+        // slice can take negative values
+        //  It will print upto index 6
+        // var s = str.substring(1,7);
+        // console.log(slice);
+        // console.log(s);
+        // var substr1 = str.substr(2,4);
+        // First arg gives starting index second arg gives length
+        // console.log(substr1);
+
+        // var replaced = str.replace('Jasmeet','Apple');
+        // console.log(replaced);
+        // Original string has not changed
+
+        // console.log(str.toUpperCase());
+        // console.log(str.toLowerCase());
+
+        // var concat = str.concat('Coding is fun');
+        // console.log(concat);
+
+        console.log(str.charAt(8));
+        console.log(str.charCodeAt(8));
+
+        // var StrWithSpaces = "       This is                coding World     ";
+        // console.log(StrWithSpaces);
+        // console.log(StrWithSpaces.trim());
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and Text Shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .Box{
+            margin: 15px;
+            padding: 43px;
+            background-color: #dbc2c2;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            /* box-shadow: offset-x offset-y  blur-radius spread-radius color; */
+            /* box-shadow: 12px 13px #e34097; */
+            box-shadow: -12px -13px 10px #e34097; 
+            /* box-shadow: -12px -13px 10px 15px #e34097;  */
+            /* rgba where a is alpha a decides color ko kitna dark rakhna ha  */
+        }
+        #Box-1{
+            /* Multiple box shadows */
+            box-shadow:  3px 4px inset #6029d7,-12px -13px 10px #e34097;
+        }
+        #Box-2 h2{
+            /* text-shadow: 3px 2px #de89cd; */
+            text-shadow: 3px 2px 3px #e018b8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="Box" id="Box-1">Card-1 <br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores eius tempora quod quisquam ut praesentium eligendi vero, perspiciatis dolore? Eveniet, impedit inventore atque nisi, tempora debitis doloremque officia necessitatibus voluptate in, vitae quis laboriosam?</div>
+        <div class="Box" id="Box-2"><h2>Card-2</h2> Lorem ipsum dolor sit amet, consectetur adipisicing elit. At iusto mollitia nihil. Blanditiis provident officiis natus optio magnam iure autem doloribus voluptatem voluptatibus hic voluptates impedit, itaque incidunt id fugiat culpa iusto aperiam eos!</div>
+        <div class="Box" id="Box-3">Card-3 <br> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit repudiandae, id, earum adipisci temporibus repellendus tempora eum dolor eius laborum et. Fugit quia delectus quisquam. Maxime velit reiciendis magnam consequatur error quod illo architecto.</div>
+    </div>
+</body>
+</html>

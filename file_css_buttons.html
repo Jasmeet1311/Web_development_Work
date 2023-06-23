@@ -1,0 +1,99 @@
+<!-- Designing buttons link and pseudo selectors -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons and links</title>
+    <style>
+        h1{
+            border: solid indigo ;
+            padding: 30 px;
+            margin: 30px;
+            width: 900px;
+            height: 70px;
+            background-color: rgb(155, 208, 218);
+        }
+        h2{
+            width: 900px;
+            height: 50px;
+        }
+        .container{
+            padding: 15px;
+        }
+        span{
+            font-weight: bold;
+            margin: 20px;
+        }
+        .btn{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: bold;
+        }
+        #btn3{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: bold;
+        background-color: lightgray;
+        padding: 6px;
+        }
+        #btn4{
+            font-family: 'Times New Roman', Times, serif;
+            background-color: rgb(207, 179, 183);
+            font-weight: bold;
+            border:none;
+            font-size: 13px;
+            border-radius: 4px;
+        }
+        .btn:hover{
+            background-color: rgb(35, 35, 117);
+            border: 2px solid black;
+        }
+        .links{
+            color: rgb(179, 13, 13);
+            background-color: rgb(180, 228, 235);
+            font-weight: bold;
+            border-radius: 4px;
+
+        }
+        a:hover{
+            color: darkslateblue;
+            background-color: yellow;
+        }
+        a:visited{
+            background-color: tomato;
+        }
+    </style>
+</head>
+<body>
+    <h1> Styling buttons and links</h1>
+    <div class="container">
+        <h2>Various options available for you</h2>
+       <div>
+        <span>option 1</span>
+        <button class="btn">contact us</button>
+    </div>
+    <div>
+        <span>option 2</span>
+        <button>contact us</button>
+    </div>
+    <div>
+        <span>option 3</span>
+        <button id="btn3">contact us</button>
+    </div>
+    <div>
+        <span>option 4</span>
+        <button id="btn4">contact us</button>
+    </div>
+     <h2>styling links</h2>
+     <div>
+         <span>option 1</span>
+         <a href="https://google.com">click here</a>
+     </div>
+     <div>
+         <span>option 2</span>
+         <a href="https://instagram.com" class="links">click here</a>
+     </div>
+    </div>
+</body>
+</html>

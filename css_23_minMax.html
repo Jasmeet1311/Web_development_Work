@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS  Grid autofit Minmax </title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            /* grid-template-columns: 150px 150px; */
+            /* justify-content: center; */
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        }
+        .box{
+            border: 2px solid black;
+            background-color: blanchedalmond;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">This is item no.-1</div>
+        <div class="box">This is item no.-2</div>
+        <div class="box">This is item no.-3</div>
+        <div class="box">This is item no.-4</div>
+        <div class="box">This is item no.-5</div>
+        <div class="box">This is item no.-6</div>
+        <div class="box">This is item no.-7</div>
+        <div class="box">This is item no.-8</div>
+        <div class="box">This is item no.-9</div>
+        <div class="box">This is item no.-10</div>
+    </div>
+</body>
+</html>

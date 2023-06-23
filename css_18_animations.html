@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations in CSS</title>
+    <style>
+        .container{
+            background-color: rgb(39, 57, 217);
+        }
+        .box{
+            background-color: aqua;
+            width:250px;
+            height: 250px;
+            position: relative;
+            animation-name: jasmeet1;
+            animation-duration: 3s;
+            animation-iteration-count: 3; /*It can be infinite*/
+            /* animation-fill-mode: forwards; It can be alternate as well */
+            /* animation-timing-function: ease-in; */
+            /* Ease in is slow at the starting but fast at the end */
+            animation-delay: 2s;
+            animation-direction: reverse;
+        }
+        @keyframes jasmeet1 {
+            from{
+                width: 250px;
+            }
+            to{
+                width:1000px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            Animations effects 
+        </div>
+    </div>
+</body>
+</html>

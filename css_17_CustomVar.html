@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Custom variables and properties</title>
+    <style>
+        :root{
+            /* These variables can be used in further css code */
+            --primary-color:hotpink;
+            --danger-color:red;
+            --maxwid:233px;
+        }
+        .container{
+            display: flex;
+        }
+        .box{
+            border: 2px solid var(--danger-color);
+            width: 178px;
+            height: 178px;
+            margin: 4px 45px;
+            background-color: var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+</body>
+</html>

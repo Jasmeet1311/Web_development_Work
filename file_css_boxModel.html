@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        body{
+            background-color: rgb(115, 231, 252);
+        }
+        #heading{
+              padding-left: 300px;
+              margin:30px;
+              border: 30px;
+        }
+        span{
+           font-weight: bold;
+        }
+        #img{
+             border:black solid;
+             margin:65px;
+             
+        }
+    </style>
+</head>
+<body>
+     <h1 id="heading"> Box model and box sizing </h1>
+     <div>
+         <ul>
+             <li><span>Content-</span> The content of the box, where text and images appear.</li>
+             <li><span>Padding-</span> It clears an area around the content. The padding is transparent.</li>
+             <li><span>Border-</span> A border is one that covers the padding and content.</li>
+             <li><span>Margin-</span> It clears an area outside the border. The margin is also transparent.</li>
+         </ul>
+     </div>
+     <div id="img">
+     <img src="https://www.helicalinsight.com/wp-content/uploads/2019/07/box-model.jpg" >
+     </div>
+     <div>
+         <p>The box model helps us to define the padding, border, and margin around an element. So from the above diagram we can see where all these things lie around the element. The element is in the center surrounded by padding, border and margin.</p>
+     </div>
+     <div>
+         <p>Let us now understand a property called <span>'Box sizing’</span>. On giving width to the element and after that applying padding in the container, the width also changes. It is because in the actual width of an element, margin is already been added into it. If you want this not to happen then you can use the property of ‘box-sizing’.
+
+          <span>  box-sizing: border-box </span>
+            Now if you change the padding then it will adjust the width according to the padding.
+            
+            We can take the help of universal selector in the CSS to apply the property of box-sizing in all the elements available. It is denoted with a ‘*’.
+            <div>
+            * {
+                        box-sizing: border-box; <br>
+                        margin: 0; <br>
+                        padding: 0; <br>
+                    }
+                </div>
+            So I believe the concept of CSS Box Model and Box Sizing is understood to you. To understand more deeply, you can try to change the values and see all the necessary changes.
+            
+            </p>
+     </div>
+</body>
+</html>

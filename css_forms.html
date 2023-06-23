@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        .container{
+            border: 2px solid gray;
+            border-radius: 4px;
+            text-align: center;
+            background-color: blanchedalmond;
+            margin-left: 30%;
+            margin-right: 30%;
+        }
+        div{
+            margin: 20px;
+        }
+        h2{
+            color: rgb(120, 15, 146);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="#">
+        <div>
+        <h2>Enter your details</h2>
+        </div>
+        <div>
+        <label for="name">Name: </label>
+        <input type="text" id="name">
+        </div>
+        <div>
+        <label for="email">Email: </label>
+        <input type="email" id="email">
+        </div>
+        <div>
+        <label for="date">Date: </label>
+        <input type="date" id="email">
+        </div>
+        <div>
+            Gender: Male<input type="radio" name="MyGender">Female <input type="radio" name="MyGender">
+        </div>
+        <br>
+        <div>
+            Password: <input type="password">
+        </div>
+        <div>
+            <div>
+                Select Your car
+                <select name="Mycar">
+                    <option value="Swift">Swift</option>
+                    <option value="Indica"selected>Baleno</option>
+                    <option value="Indica">Fortuner</option>
+                    <option value="Indica">Skoda</option>
+                </select>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

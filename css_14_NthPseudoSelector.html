@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nth Pseudo selectors </title>
+    <style>
+        input{
+            display:block;
+        }
+        input[type='text']{
+            border: 3px solid rgb(34, 51, 148);
+            background-color: aqua;
+        }
+        a[target]{
+            /* will target anchor tag with target  */
+            background-color: bisque;
+        }
+        a[target='_self']{
+            /* Will target with attribute blank */
+            background-color: rgb(226, 137, 210);
+        }
+        li:nth-child(3){
+            color: rgb(255, 127, 232);
+        }
+        li:nth-child(2n+0){
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form >
+            <input type="text" class="text">
+            <input type="button" value="Submit Now">
+            <input type="checkbox" >
+            <input type="datetime" name="Date" >
+        </form>
+    <div class="container2">
+        <a href="http://google.com" target="_blank">Go to Google</a>
+        <a href="http://instagram.com" target="_self">Go to Instagram</a>
+    </div>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+    </ul>
+    </div>
+</body>
+</html>

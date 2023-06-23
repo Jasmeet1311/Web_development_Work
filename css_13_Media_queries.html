@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media queries</title>
+    <style>
+        .box {
+            background-color: orange;
+            color: white;
+            text-align: center;
+            font-size: x-large;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: none;
+        }
+
+        @media only screen and (max-width:414px) {
+            #box-2 {
+                display: block;
+            }
+            #box-3 {
+                display: block;
+            }
+        }
+        @media (min-width:768px) and (max-width:1500px) {
+            #box-1 {
+                display: block;
+                background-color: aqua;
+            }
+        }
+        @media (min-width:415px) and (max-width:820px) {
+            #box-4 {
+                display: block;
+                background-color: rgb(51, 0, 255);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="box-1">Windows</div>
+    <div class="box" id="box-2">Iphone</div>
+    <div class="box" id="box-3">Android</div>
+    <div class="box" id="box-4">Ipad</div>
+</body>
+
+</html>

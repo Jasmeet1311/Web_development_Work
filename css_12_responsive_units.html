@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>en,rem,vh,vr</title>
+    <style>
+        html{
+            font-size: 6px;
+        }
+        .container{
+            text-align: center;
+            border: 2px solid black;
+            height:100vh;
+            width:100vw;
+        }
+        h2{
+            font-size: 20px;
+        }
+        #headings1{
+            /* It will make the element 3 times of its parent */
+            font-size: 3em; 
+        }
+        #headings2{
+            /* It will make the element 10 times its root element */
+            font-size: 10rem;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 id="headings1">This is heading1</h2>
+        <h2 id="headings2">This is heading2</h2>
+        <h2 id="headings3">This is heading3</h2>
+    </div>
+</body>
+</html>

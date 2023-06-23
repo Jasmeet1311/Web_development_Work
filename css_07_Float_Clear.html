@@ -1,0 +1,101 @@
+<!-- clear float and justify -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and Clear</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-color: rgb(185, 220, 227);
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        h1 {
+            font-family: 'Shantell Sans', cursive;
+            color: rgb(85, 5, 159);
+            text-align: center;
+        }
+
+        .container {
+            border: 3px solid rgb(4, 4, 121);
+            width:867px;
+            height:680px;
+            margin:auto;
+            background-color: aliceblue;
+        }
+
+        #fruits {
+            border: 3px solid #704c4c;
+            margin: 20px;
+            background-color: rgb(215 224 255);
+            float:left;
+            width:377px;
+            text-align: justify;
+        }
+
+        #computers {
+            border: 3px solid #704c4c;
+            margin: 20px;
+            background-color: rgb(215 224 255);
+            float:right;
+            width:396px;
+            text-align: justify;
+        }
+
+        #glasses {
+            border: 3px solid #704c4c;
+            background-color: rgb(215 224 255);
+            margin: 20px;
+            clear:both;
+            text-align: justify;
+    
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to my store</h1>
+        <div id="fruits">
+            <h3>All about fruits</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit tenetur necessitatibus asperiores quia
+                praesentium perferendis quod nisi, sunt deserunt, porro fugiat tempore vero neque ducimus impedit
+                debitis? Maiores, ipsam quia excepturi aliquam ut laborum expedita consectetur quas, totam recusandae
+                sed facere assumenda, iusto tempora nostrum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque in vel quam rem rerum velit! Repellat voluptatibus amet perspiciatis cum inventore sunt repudiandae.
+            </p>
+        </div>
+        <div id="computers">
+            <h3>All about computers</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis explicabo accusamus beatae? Aliquam,
+                quibusdam. Maxime, deleniti veniam. Ab quia, rerum neque velit veniam omnis quos voluptatum a debitis,
+                nihil ipsam labore accusantium tempore consectetur fuga quibusdam quo dolorem temporibus quisquam in
+                iure! Consequatur, tempore. Harum.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto sequi odit numquam, minus est labore nesciunt optio ut. Laborum, quaerat! Maiores, exercitationem ad?</p>
+        </div>
+        <div id="glasses">
+            <h3>All about glasses</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus esse iure ex blanditiis nam, est facilis
+                tempora recusandae nobis minima, eligendi officiis suscipit praesentium qui. Doloremque porro aliquid
+                excepturi expedita molestiae iure nesciunt assumenda deserunt, a similique eaque possimus debitis vitae
+                suscipit aut corporis blanditiis.</p>
+        </div>
+    </div>
+</body>
+
+</html>

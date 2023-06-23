@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClearTimeOut SetTimeOut</title>
+</head>
+<body>
+    <h3>SetTimeOut ClearTimeOut</h3>
+    <p>The setTimeout() method calls a function or evaluates an expression after a specified number of milliseconds. This function is only executed once. Use the clearTime() method to prevent the function running. Allows us to repeatedly run a function after a particular interval of time. </p>
+
+    <p>Displaying time</p>
+    <span id="time"></span>
+    <script>
+        function greet(name,text){
+            // console.log(`Good morning ${name}`);
+            alert(`Greetings ${name} Kindly SignIn\n ${text}`);
+        }
+        // timeOut = setTimeout(greet,5000,'Jasmeet','Hope you like our service');
+        // setTimeOut can take multiple arguments too
+        // console.log(timeOut);
+        // clearTimeout(timeOut); // Used to clear settimeOut call
+
+        // SetInterval = setInterval(greet,2000,'Jasmeet');
+        // clearInterval(SetInterval);
+
+        //  Displaying time
+
+        function displayTime(){
+            time= new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML = time;
+        }
+        setInterval(displayTime,1000);
+    </script>
+</body>
+</html>

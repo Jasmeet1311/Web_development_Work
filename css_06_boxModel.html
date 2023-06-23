@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model in CSS</title>
+    <style>
+        /*  * is universal selector */
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #a9c7c7;
+        }
+        .head{
+            border: 3px solid rgb(70, 70, 202);
+            background-color: rgb(227 230 253);
+            /* padding :30px;
+            margin :30px; */
+            width: 624px;
+            /* We can set margin and padding for top,bottom,left,right */
+            /* padding-top: 34px;
+            padding-left: 45px; */
+
+            /* margin: top right bottom left;
+            padding: top right bottom left */
+            /* padding :23px 67px 23px 45px;
+            margin: 23px 67px 23px 45px ; */
+
+            /* padding,margin: y(top/bottom) x(left/right) */
+            padding:34px 25px;
+            margin:32px 351px;
+            border-radius: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="head">
+        <h1>This is heading</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, voluptatem harum, porro, recusandae dolorem ipsum reprehenderit consequuntur eaque quibusdam perferendis ullam officia dignissimos ad ipsa quis amet impedit! Vel veniam non facere, dolorem quas labore adipisci explicabo eaque ea soluta itaque nihil nulla consequuntur.</p>
+    </div>
+    <div class="head">
+        <h1>This is heading</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, voluptatem harum, porro, recusandae dolorem ipsum reprehenderit consequuntur eaque quibusdam perferendis ullam officia dignissimos ad ipsa quis amet impedit! Vel veniam non facere, dolorem quas labore adipisci explicabo eaque ea soluta itaque nihil nulla consequuntur.</p>
+    </div>
+    <div class="head">
+        <h1>This is heading</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, voluptatem harum, porro, recusandae dolorem ipsum reprehenderit consequuntur eaque quibusdam perferendis ullam officia dignissimos ad ipsa quis amet impedit! Vel veniam non facere, dolorem quas labore adipisci explicabo eaque ea soluta itaque nihil nulla consequuntur.</p>
+    </div>
+</body>
+</html>

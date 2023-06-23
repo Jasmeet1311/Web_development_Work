@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert,Prompt,Confirm</title>
+    <style>
+        *{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        h2{
+            color: rgb(36, 36, 115);
+        }
+    </style>
+</head>
+<body>
+    <h2>Alert,Prompt,Confirm</h2>
+    <p>Let us start by understanding what is an alert() function. The alert() method displays an alert box(modal box) with a specified message and an OK button.</p>
+    <p>The prompt() method displays a dialog box that prompts the visitor for input. A prompt box is often used if you want to input a value before entering a page. When a prompt box pops up, the user will have to click either "OK" or "Cancel" to proceed after entering an input value. The prompt() method returns the input value if the user clicks "OK". If the user clicks "cancel" the method returns null.</p>
+    <p>The confirm() method displays a dialog box with a specified message, along with an OK and a Cancel button. A confirm box is often used if you want the user to verify or accept something. The confirm box takes the focus away from the current window and forces the browser to read the message.  The confirm() method returns true if the user clicked "OK", and false otherwise. This method is only used if we want to double-check any task performed by the user.</p>
+    <script>
+        // alert("Please Read the content carefully");
+        // Alert does not return anything
+        // let string=prompt("Enter Your name ","Guest")
+        // console.log(string);
+
+        // let value =confirm("Are you sure you want to continue?");
+        // if (value){
+        //     console.log("Action continued");
+        // }
+        // else{
+        //     console.log("Action stopped");
+        // }
+
+        let string = prompt("Enter your age?","Age");
+        if (string >18){
+            console.log("You can drive");
+        }
+        else{
+            console.log("You cannot drive");
+        }
+    </script>
+</body>
+
+</html>

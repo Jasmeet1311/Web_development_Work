@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+<body>
+    <!-- Div is a block element -->
+    <h2>HTML Forms </h2>
+    <form action="#">
+        <!-- label attribute for should be same as input attribute id  -->
+        <label for="name">Name: </label>
+        <input type="text" id="name">
+        <br>
+        <div>
+            FavColor: <input type="color" name="Mycolor">
+        </div>
+        <br>
+        <div>
+            Email: <input type="email" name="Myemail">
+        </div>
+        <br>
+        <div>
+            Date:<input type="date" name="Date">
+        </div>
+        <br>
+        <div>
+            Bonus: <input type="number" name="Mynum">
+        </div>
+        <br>
+        <div>
+            Are you Eligible? <input type="checkbox" name="MyEligibility" checked>
+        </div>
+        <br>
+        <div>
+            Gender: Male<input type="radio" name="MyGender">Female <input type="radio" name="MyGender">
+        </div>
+        <br>
+        <div>
+            Password: <input type="password">
+        </div>
+        <div>
+            <input type="search" name="search" id="search" placeholder="Search here">
+        </div>
+        <br>
+        <div>
+            <input type="range" name="range" min="0" max="50">
+        </div>
+        <br>
+        <div>
+            Select Your car
+            <select name="Mycar">
+                <option value="Swift">Swift</option>
+                <option value="Indica"selected>Indica</option>
+            </select>
+        </div>
+        <br>
+        <div>
+           <input type="submit" value="Submit Now">
+           <input type="reset" value="ResetNow">
+        </div>
+        <div>
+            <textarea name="text" id="text" cols="30" rows="10"></textarea>
+        </div>
+        <label for="file">Enter your file</label>
+        <input type="file" name="file" id="file">
+    </form>
+    <h3>List</h3>
+    <p>Ordered List</p>
+    <ol type="A">
+        <li>Apple</li>
+        <li>Mango</li>
+        <li>Pineapple</li>
+    </ol>
+    <h3>Unordered  List</h3>
+    <ul type="square">
+        <li>Apple</li>
+        <li>Mango</li>
+        <li>Pineapple</li>
+    </ul>
+    <ul type="circle">
+        <li>Apple</li>
+        <li>Mango</li>
+        <li>Pineapple</li>
+    </ul>
+    <h3>Description list</h3>
+    <dl>
+        <dt>Coffee</dt>
+        <dd>-Black hot drink</dd>
+        <dt>Milk</dt>
+        <dd>-White cold drink</dd>
+    </dl>
+</body>
+</html>

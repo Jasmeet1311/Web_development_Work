@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox in CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <style>
+        h1{
+            color: rgb(44, 44, 108);
+            font-family: 'Bangers', cursive;
+            text-align: center;
+            background-color: rgb(175, 159, 216);
+            margin:0px;
+
+        }
+        h3{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: rgb(29, 16, 169);
+        }
+        p{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  
+        }
+        li{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: bold;
+        }
+        .container{
+            border: 2px solid black;
+            display:flex;  /* Initialize the container as flexbox */
+            height:300px;
+            background-color: yellowgreen;
+            /* flex-direction: row;  */
+            flex-direction: column;
+            /* flex-direction: column-reverse; */
+            /* flex-direction: row-reverse; */
+            /* align-items: center;
+            align-items: flex-end;
+            align-items: flex-start;
+            align-items: stretch; */
+        }
+        #box1{
+            border: 2px solid black;
+            background-color: wheat;
+            margin:3px;
+            height:60px;
+            width: 60px;
+            /* align-self: center; */
+            /* align-self: flex-start; */
+            /* align-self: flex-end; */
+        }
+        #box2{
+            border: 2px solid black;
+            background-color: wheat;
+            margin:3px;
+            height:60px;
+            width: 60px;
+            order:34;
+        }
+        #box3{
+            border: 2px solid black;
+            background-color: wheat;
+            margin:3px;
+            height:60px;
+            width: 60px;
+            /* Flex properties for a flex item */
+            /* Higher the order, later it shows up in the container */
+            /* order: 2; */
+            /* flex-basis: 160px; */
+            /* when flex-direction is set to row flex-basis: will control width */
+            /* when flex-direction is set to column flex-basis: will control height */
+
+            /* /* flex-grow: 2; */
+            flex-shrink: 2; 
+        }
+        .container2{
+            border: 2px solid black;
+            display:flex;  /* Initialize the container as flexbox */
+            height:300px;
+            background-color: yellowgreen;
+            /* flex-wrap: nowrap; --> Default */ 
+             flex-wrap: wrap;
+             /* This is a shorthand for flex-direction: and flex-wrap: ; */
+            /* flex-flow: row-reverse wrap;  */
+
+
+            /* justify-content will justify the content in horizontal direction */
+            /* justify-content: center; */
+            /* justify-content: space-between; */
+            /* justify-content: space-evenly; */
+            /* justify-content: space-around; */
+
+            /* align-items will justify the content in vertical direction */
+            /* align-items: center; */
+            /* align-items: flex-end; */
+            /* align-items: flex-start; */
+            align-items: stretch; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Basics of CSS Flexbox</h1>
+    <h3>Introduction:</h3>
+    <p>Flexbox also called flexible box layout also makes it easier to layout,align and style items in th container while maintaining the responsiveness of the design. <br>
+    To create a flexbox you need to set the display of the container as flex. <br>
+    <strong>display:flex;</strong>  
+    </p>
+    <p>There is a flex container that stores sub elements called flex items</p>
+    <img src="https://cdn-images-1.medium.com/max/1600/0*XLS2cNgO6r6PYzEh.png" alt="#">
+    <h3>Flex container properties:</h3>
+    <ol>
+        <li>Flex direction</li>
+        <p>It defines in which direction the flex elements would be displayed.It takes values like row column or reverse <br>
+        Flex-direction: row; (Default value of flex-direction is row)
+        </p>
+    </ol>
+    <div class="container">
+        <div id="box1">Box 1</div>
+        <div id="box2">Box 2</div>
+        <div id="box3">Box 3</div>
+        <p>Flex direction column output</p>
+    </div>
+    <ol>
+        <li>Flex Wrap</li>
+        <p>Using this property we can make our website responsive of different screen sizes <br>
+        flex-wrap: wrap; (Default value of flex-direction is no-wrap)
+        </p>
+    </ol>
+    <div class="container2">
+        <div id="box3">Box 4</div>
+        <div id="box3">Box 5</div>
+        <div id="box3">Box 6</div>
+        <div id="box3">Box 7</div>
+        <div id="box3">Box 8</div>
+        <div id="box3">Box 9</div>
+        <div id="box3">Box 10</div>
+        <div id="box3">Box 11</div>
+        <div id="box3">Box 12</div>
+        
+        <p>Flex wrap output</p>
+    </div>
+</body>
+</html>

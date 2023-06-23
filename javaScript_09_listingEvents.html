@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listing Events</title>
+</head>
+<body>
+    <h3>How to make Browser Events come into action?</h3>
+    <p>Here are examples of HTML events.</p>
+    <ul id="para">
+        <li>An HTML webpage has finished loading</li>
+        <li>An HTML input fiels has changed</li>
+        <li>An HTML button was clicked</li>
+    </ul>
+    <button id="btn" onclick="toggleHide()">Hide/Seen</button>
+    <script>
+        let btn = document.getElementById('btn');
+        let para = document.getElementById('para');
+        para.addEventListener('mouseover', function run(){
+            console.log("You are inside para");
+        })
+        para.addEventListener('moveout',function run(){
+            console.log('You are outside para');
+        })
+        function toggleHide(){
+            if(para.style.display != 'none'){
+                para.style.display = 'none';
+            }
+            else{
+                para.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>

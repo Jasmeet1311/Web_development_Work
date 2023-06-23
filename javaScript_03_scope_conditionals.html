@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope and conditionals in JavaScript</title>
+</head>
+<body>
+    <div>Item 1</div>
+    <div>Item 2</div>
+    <div>Item 3</div>
+    <div>Item 4</div>
+    <script>
+        // Scope of var is global 
+        // var string1 ='This is jasmeet';
+        // console.log(string1);
+        // var string1 ='String 1 changed';
+        // console.log(string1);
+        
+        // Scope of let is of block level 
+        // let age =21; // Scope is global
+        // console.log(age);
+        // {   
+        //     age=34;// Scope is local within the block
+        //     console.log(age);
+        // }
+
+        // const a= 45;
+        // console.log(a);
+           
+
+        // if -else in javascript
+        //   let age = 7;
+        //   if (age>18){
+        //     console.log("You are above 18 years");
+        //   }
+        //   else if(age==7){
+        //     console.log("Age is equal to 7");
+        //   }
+        //   else{
+        //     console.log("You are below 18 years");
+        //   }
+
+        // Switch case in javascript
+        let a = "Tuesday";
+        switch (a) {
+            case "Sunday":
+                console.log("Today is sunday");
+                break;
+            case "Tuesday":
+                console.log("Today is tuesday");
+                break;
+            default:
+                console.log("Enjoy dude!!")
+                break;
+        }
+    </script>
+</body>
+</html>

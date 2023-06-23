@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility mode and Z-index</title>
+    <style>
+        h2{
+            border: 2px solid purple;
+            color: #38144a;;
+            background-color: lightslategray;
+            text-align: center;
+            text-decoration: underline;
+        }
+        body{
+            background-image: url(https://cdn.pixabay.com/photo/2017/02/15/11/15/wintry-2068298_960_720.jpg);
+            font-weight: bold;
+           
+        }
+        .box{
+            border: 2px solid black;
+            height: 70px;
+            width: 70px;
+            padding: 23px;
+            display: inline-block;
+            font-weight: bold;
+            margin-left: 20px;
+            /* visibility: visible; */
+        }
+        #box1{
+            background-color: cadetblue;
+        }
+        #box2{
+            background-color: rgb(42, 221, 18);
+        }
+        #box3{
+            background-color: rgb(153, 34, 100);
+            
+            /* visibility: hidden; */
+            /* display: none; */
+        }
+        #box4{
+            background-color: rgb(204, 224, 24);
+        }
+        .Box{
+            border: 2px solid black;
+            height: 75px;
+            width: 75px;
+        }
+        #box-1{
+            top: 49px;
+            background-color: cornflowerblue;
+            position: relative;
+            z-index: -35;
+            /* z-index: 1; */
+        }
+        #box-2{
+            top: 14px;
+            background-color: rgb(24, 226, 74);
+            position: relative;
+            z-index: -165;
+            
+            /* z-index: 0; */
+        }
+        #box-3{
+            
+            background-color: rgb(199, 51, 58);
+        }
+        #box-4{
+            background-color: rgb(240, 153, 22);
+        }
+        
+    </style>
+</head>
+<body>
+    <h2>Visibility mode and z index</h2>
+    <p>Now, let's start our discussion on visibility property :
+
+        Visibility property is used to hide or show an HTML element without changing the layout of the page.
+        The hidden element uses the space on the page because it is still there, but it is not visible to the user.
+        </p>
+    <div class="box" id="box1">Box 1</div>
+    <div class="box" id="box2">Box 2</div>
+    <div class="box" id="box3">Box 3</div>
+    <div class="box" id="box4">Box 4</div>
+    <p>display:none; - It completely removes an HTML tag from the web page like it was never there. <br>
+        visibility:hidden;  - It makes the tag invisible but will not remove the element, and it will still occupy the space on the page. </p>
+        <h2>Z-Index Property In CSS</h2>
+        <p>Note: Z-index does not work on static position value. It only works on the elements with position: relative, absolute, fixed, or sticky. <br>the element with smaller z-index value will be covered by the element with larger z-index value.</p>
+        <div class="Box" id="box-1">Box 1</div>
+    <div class="Box" id="box-2">Box 2</div>
+    <div class="Box" id="box-3">Box 3</div>
+    <div class="Box" id="box-4">Box 4</div>
+</body>
+</html>
