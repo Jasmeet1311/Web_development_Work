@@ -20,6 +20,13 @@
             width: 150px;
             height: 150px;
             margin: 2px;
+            background-color: aqua;
+        }
+        .container{
+            border: 2px solid red;
+            height: 3444px;
+            background-color: bisque;
+            /* position: relative; */
         }
         #box3{
             /* position: relative;
@@ -29,7 +36,8 @@
             top: 34px;
             left: 34px; */
             /* position: fixed;
-            right:4px; */
+            right:4px;
+            bottom: 4px; */
             position:sticky;
             top:4px;
         }
@@ -46,30 +54,58 @@
          <li>fixed</li>
          <li>sticky</li>
      </ul>
-     <h3>position: static;</h3>
-     <ul><li>It is the default position of HTML elements.</li></ul>
-     <h3>position: relative;</h3>
-     <ul><li>It is used when we need to position an HTML element relative to its normal position.</li>
+    <h3>position: static;</h3>
+    <ul><li>It is the default position of HTML elements.</li></ul>
+    <h3>position: relative;</h3>
+    <ul><li>It is used when we need to position an HTML element relative to its normal position.</li>
     <li>We can set the top, right, bottom, and left properties that will cause the element to adjust away from the normal position.
     </li></ul>
-    <div class="box" id="box1">1</div>
-    <div class="box" id="box2">2</div>
-    <div class="box" id="box3">3</div>
-    <div class="box" id="box4">4</div>
     <p>The default position of all the boxes in the above image is static. Now, we will change the position from static to relative of box 3</p>
     <p>You can see in the image given below that box3 has shifted 34px away from the top and left side relative to its normal position.
 
     </p>
     <h2>position: absolute;</h2>
     <ul>An element with the absolute position will move according to the position of its parent element.
-        In the absence of any parent element, the HTML element will be placed relative to the page.</ul>
-        <h2>position: fixed;</h2>
-        <ul>An element with position:fixed; will remain stuck to a specific position even after the page is scrolled.
-            This position property is used when we want to keep an HTML element at a fixed spot no matter where on the page the user is.</ul>
-            <p>position: sticky;
-                It is a hybrid of relative and fixed position.
-                An HTML element with position:sticky; will just sit there until a given position offset is met.</p>
-                
+    In the absence of any parent element, the HTML element will be placed relative to the page.</ul>
+    <h2>position: fixed;</h2>
+    <ul>An element with position:fixed; will remain stuck to a specific position even after the page is scrolled.
+    This position property is used when we want to keep an HTML element at a fixed spot no matter where on the page the user is.</ul>
+    <p>position: sticky;
+    It is a hybrid of relative and fixed position.
+    An HTML element with position:sticky; will just sit there until a given position offset is met.</p>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3 Let's chat</div>
+        <div class="box" id="box4">4</div>
+    </div>
+
+        <div>This is div</div>
+        <div>This is div</div>
+        <div>This is div</div>
+        <div>This is div</div>
+        <div>This is div</div>
+        <div>This is div</div>
+        <div>This is div</div>
+        <div>This is div</div>
+        <div>This is div</div>
+        <div>This is div</div>
+        <div>This is div</div>
+        <div>This is div</div>
+        <div>This is div</div>
+        <div>This is div</div>
+        <div>This is div</div>
+        <div>This is div</div>
+        <div>This is div</div>
+        <div>This is div</div>
+        <div>This is div</div>
+        <div>This is div</div>
+        <div>This is div</div>
+        <div>This is div</div>
+        <div>This is div</div>
+        <div>This is div</div>
+        <div>This is div</div>
+                         
 
 </body>
 </html>

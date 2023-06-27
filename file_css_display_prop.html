@@ -14,7 +14,7 @@
             background-color: rgb(54, 7, 54);
             color: lightpink;
         }
-        img{
+        .img1{
             margin: auto;
             display: block;
             width: 500px;
@@ -32,6 +32,21 @@
             margin: auto;
             width: 1000px;
         }
+        .elements{
+            background-color: rgb(232, 232, 104);
+        }
+        #twitter{
+            width: 23px;
+            height: 23px;
+            display: block;
+            border: 2px solid red;
+            margin: auto;
+        }
+        h2{
+            background-color: blueviolet;
+            text-align: center;
+        }
+
 
     </style>
 </head>
@@ -40,13 +55,14 @@
     <h1>CSS Display properties</h1>
     <p>The display CSS property sets whether an element is treated as a block or inline element and the layout used for
         its children, such as flow layout, grid or flex.</p>
-    <img
+    <img class="img1"
         src="https://i1.wp.com/www.differencebetween.com/wp-content/uploads/2018/02/Difference-Between-Block-and-Inline-Elements-fig-1.png">
     <p>By inspecting both the elements in the Chrome browser, we see that the image is an inline element and the h3 heading is the block element.Our objective is to bring all the elements to the center of the webpage. We can achieve it by adjusting the width of the block element i.e. the heading.</p>
     <p>The next problem which arises is that when we stretch the full width of the page, the text in the heading moves towards left. So to move it towards the center, we can set the property of text-alignment as center.
         Display inline means it will take the space according to the size of the element. Display block means we can set its width and by margin manually.</p>
 
     <p>Now suppose we want to make an element inline as well as customize its width too, then in that case we can use inline-block. To understand it, first we will add three divs with some texts in it and then style it.</p>
+    
     <div class="container">
         <div class="box">
             <h4 class="Heading "></h4>
@@ -61,6 +77,10 @@
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum sunt, sed, voluptas provident neque est iure magni necessitatibus, harum voluptates dignissimos explicabo maiores error fuga in sapiente? Facere magnam placeat repellendus esse iste tempora minima excepturi corrupti sed delectus quas illum facilis, ratione eaque.
         </div>
 
+    </div>
+    <div class="elements">
+        <img  id="twitter" src="twitter.png" alt="twitter">
+        <h2>This is my block</h2>
     </div>
 
 </body>
