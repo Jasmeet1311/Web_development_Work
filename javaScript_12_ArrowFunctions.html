@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Functions</title>
+</head>
+<body>
+    <h2>Arrow functions -> shorthand to write functions</h2>
+</body>
+<script>
+    // Function defination
+    function greet(){
+        console.log("Good morning");
+    }
+    //  Using arrow functions
+    // No arguments and no return value
+    //  1 way
+    let greet1 = ()=> {
+        console.log("Good evening");
+    }
+    //  2 way
+    let greet2 = ()=> console.log("Hi I am Jasmeet");
+
+    // With 2 arguments and return value
+    //  1 way
+    let add =(a,b)=>{
+        return a+b;
+    } 
+    //  2nd way
+    let diff=(a,b)=> a-b;
+
+    // With one argument and return value
+    let half = a => a/2;
+    setTimeout(() => {
+        console.log("You are using arrow functions");
+    }, 5000);
+</script>
+</html>

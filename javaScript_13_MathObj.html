@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Objects</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Math Object</h2>
+    </div>
+</body>
+<script>
+    let m = Math;
+    console.log(m); // It will print some constant values and functions in the console
+
+    // Functions used
+    let a = 34.91178;
+    let b = 89;
+    // Math.round fn -> Round values to nearest integer
+    console.log(" The value of a is",a,"and b is ",b);
+    console.log("Rounded value of a is",Math.round(a),"Rounded value of b is",Math.round(b));
+
+    // Math.pow , Math.sqrt
+    console.log("2^5 is",Math.pow(2,5));
+    console.log("square root of 4 is",Math.sqrt(4));
+    console.log("square root of 7 is",Math.sqrt(7));
+
+    // Ceil and floor function 
+    //  Ceil is used to round up the number to the nearest integer
+    //  floor is used to round down the number to the nearest integer
+
+    console.log(Math.ceil(a)); // Round up
+    console.log(Math.floor(a)); // Round down
+
+    //  Trignometric functions
+    console.log(Math.PI);
+    console.log(Math.sin(Math.PI/2));
+    console.log(Math.sin(Math.PI));
+    console.log(Math.cos(Math.PI/2));
+    console.log(Math.cos(Math.PI));
+
+    // Min and max functions
+    console.log(Math.max(49,5,6));
+    console.log(Math.min(49,5,6));
+
+    //  Function to generate a random number
+    console.log(Math.random());  // generates a random number between 0 and 1
+    // Generating a random number between a and b
+    // let num = a +(b-a)*Math.random();
+
+    let num = 1+ (100-1)*Math.random();  // generates random number between 1-100
+    console.log(num);
+
+    let l = Math.log10(2);
+    console.log(l);
+
+
+
+
+
+
+</script>
+</html>
