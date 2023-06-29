@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All about JSON</title>
+</head>
+<body>
+    <div class="container">
+        <ul>
+            <li>JavaScript stands for javascript object notation.</li>
+            <li>It is a lightweight data-interchange format.</li>
+            <li>It is used for storing and transporting data.</li>
+            <li>It is used when data is to be sent from web page to server.</li>
+            <li>Data is always in key value pairs</li>
+        </ul>
+        <p>why there is need for JSON? In some cases, we will have nested objects. Then, in that case, it is difficult to transport each property of the object and convert it into a string to parse them. In such cases, we take the help of JSON.</p>
+    </div>
+</body>
+<script>
+    let jsonobj ={
+        name : "Jasmeet kaur",
+        age: 21,
+        qualification:"Btech(CSE)"
+    }
+    console.log(jsonobj); 
+
+    let myJsonstr = JSON.stringify(jsonobj); // converts javascript obj to string
+    console.log(myJsonstr);
+    // we can apply string functions onto this string
+
+    let newJson = myJsonstr.replace("Jasmeet kaur","Sukhmeet kaur"); // used to replace a string
+    console.log(newJson);
+
+    let newobj = JSON.parse(newJson); // used to convert string to javascripty obj
+    console.log(newobj);
+</script>
+</html>
