@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website layout Using Grid</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            grid-template-rows: 1fr 4.5fr 1fr;
+            grid-gap: .5rem;
+        }
+        .box{
+            border: 2px solid black;
+            text-align: center;
+            font-family: cursive;
+            border-radius: 10px;
+        }
+        #box-1{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            background-color: #ff9cff;
+            line-height: 88px;
+        }
+        #box-4{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            background-color: rgb(221, 160, 194);
+            line-height: 88px;
+        }
+        #box-2{
+              line-height: 386px;
+              background-color: pink;
+        }
+        #box-3{
+              line-height: 386px;
+              background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box-1">Header</div>
+        <div class="box" id="box-2">Left- Navigation</div>
+        <div class="box" id="box-3">Content</div>
+        <div class="box" id="box-4">Footer</div>
+    </div>
+</body>
+</html>
