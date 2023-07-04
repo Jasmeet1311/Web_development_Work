@@ -10,40 +10,51 @@
             display: grid;
             grid-gap: 1rem;
             grid-template-areas: 
-            'navbar navbar navbar navbar' 
-            'section section section aside'
-            'footer footer footer footer ';
+            'navbar navbar navbar navbar navbar navbar' 
+            'aside aside section section section section'
+            'footer footer footer footer footer footer ';
         }
         .box{
             border: 2px solid black;
             background-color: rgb(220, 190, 231);
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius: 10px;
         }
         #navbar{
             grid-area: navbar;
+            height: 100px;
+            line-height: 100px;
         }
         #section{
             grid-area: section;
+            height: 370px;
+            line-height: 370px ;
         }
         #aside{
             grid-area:aside;
+            height: 370px;
+            line-height: 370px;
         }
         #footer{
             grid-area: footer;
+            height: 100px;
+            line-height: 100px;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <nav id="navbar" class="box">
-            Home ContactUs About Services
+        Header
         </nav>
         <section id="section" class="box">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae cum optio totam unde numquam excepturi dolore fugit sapiente, officiis, facere similique nihil dolor!
+            Content
         </section>
         <section id="aside" class="box">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quod fugiat molestias! Error, minima sunt! Sequi voluptate neque consectetur expedita, numquam a natus!
+            Aside
         </section>
     </div>
-    <footer id="footer" class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam tempora corrupti consectetur.</footer>
+    <footer id="footer" class="box">Footer</footer>
 </body>
 </html>
