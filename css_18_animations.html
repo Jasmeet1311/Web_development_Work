@@ -11,17 +11,19 @@
         }
         .box{
             background-color: aqua;
+            border-radius: 50%;
             width:250px;
             height: 250px;
             position: relative;
-            animation-name: jasmeet1;
-            animation-duration: 3s;
-            animation-iteration-count: 3; /*It can be infinite*/
+            /* animation-name: jasmeet1; */
+            animation-name: jasmeet2;
+            animation-duration: 1s;
+            animation-iteration-count: infinite; /*It can be infinite*/
             /* animation-fill-mode: forwards; It can be alternate as well */
             /* animation-timing-function: ease-in; */
             /* Ease in is slow at the starting but fast at the end */
-            animation-delay: 2s;
-            animation-direction: reverse;
+            /* animation-delay: 2s;
+            animation-direction: reverse; */
         }
         @keyframes jasmeet1 {
             from{
@@ -31,12 +33,29 @@
                 width:1000px;
             }
         }
+        @keyframes jasmeet2{
+            0%{
+                top: 0px;
+                left: 0px;
+            }
+            50%{
+                top: 50px;
+                left: 0px;
+            }
+            75%{
+                top: 50px;
+                left: 50px;
+            }
+            100%{
+                top: 0px;
+                left: 50px;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="box">
-            Animations effects 
         </div>
     </div>
 </body>

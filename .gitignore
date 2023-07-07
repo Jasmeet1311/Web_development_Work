@@ -5,3 +5,5 @@ back-3.jpg
 Rough.txt
 Rough1.txt
 Express
+node_modules
+*.json
