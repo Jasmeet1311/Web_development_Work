@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element moving in Circular Motion</title>
+    <style>
+        .container{
+            margin-left: 400px;
+            position: relative;
+            height: 600px;
+            width: 600px;
+            border-radius: 50%;
+            border: 2px solid black;
+            transform: rotate(0deg);
+            background-color: hotpink;
+            transition: all 2s linear;
+        }
+        .box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid black;
+            position: absolute;
+            transform: rotate(0deg);
+            transition: all 2s linear ;
+            height: 300px;
+            width: 300px;
+            background-color: rgb(143, 7, 143);
+            top: 6px;
+            left: 110px;
+            border-radius: 50%;
+        }
+        .container:hover{
+            transform: rotate(360deg);           
+        }
+        .box:hover{
+            transform: rotate(-360deg);
+        }
+        img{
+            width: 230px;
+        }
+    </style>
+</head>
+
+<body>
+        <div class="container">
+            <div class="box">
+                <img src="twitter.png" alt="">
+            </div>
+        </div>
+</body>
+</html>
