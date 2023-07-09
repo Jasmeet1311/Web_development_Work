@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouncing ball animation</title>
+    <style>
+        body{
+            background-image: url("https://tse2.mm.bing.net/th?id=OIP.cnbAUd4CVTCsTh0t4S9d-gHaDt&pid=Api&P=0&h=180");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .ball{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            border-radius: 50%;
+            background-color: orange;
+            margin: auto;
+            animation-name: bounce;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
+            animation-direction: alternate;
+        }
+        @keyframes bounce {
+            from{
+                transform: translateY(30px);
+            }
+            to{
+                transform: translateY(400px);
+            }
+        }
+        h3{
+            font-family:cursive;
+            color: rgb(110, 9, 110);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h3>Task-6 Bouncing Ball Animation By Jasmeet</h3>
+    <div class="ball"></div>
+</body>
+</html>

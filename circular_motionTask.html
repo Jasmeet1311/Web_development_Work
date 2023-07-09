@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circular Motion</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            height: 500px;
+            width: 500px;
+            background-color: rgb(36, 125, 234);
+            animation-name: parent;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            border-radius: 50%;
+            margin: auto;
+        }
+        .box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid black;
+            height: 200px;
+            width: 200px;
+            background-color: aqua;
+            position: relative;
+            animation-name: child;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            border-radius: 50%;
+            top: 14px;
+            left: 87px;
+        }
+        @keyframes child {
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+        @keyframes parent {
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(-360deg);
+            }
+        }
+        img{
+            width: 160px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="twitter.png" alt="">
+        </div>
+    </div>
+</body>
+</html>
