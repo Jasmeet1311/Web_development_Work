@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To display content on browser using Javascript </title>
+</head>
+
+<body>
+    <div id="body"></div>
+    <div class="box"></div>
+    <div id="id"></div>
+    <input type="color" name="color" id="color" onclick=change()>
+</body>
+<script>
+    //  To display anything on browser using js
+    // 1st way
+    let body = document.getElementById("body");
+    console.log(body);
+    document.getElementById("body").innerHTML = "Hello Students";
+    // 2nd way
+    document.write("I am Jasmeet");
+    // 3rd way
+    // window.alert("Alert!!!");
+    // 4th way
+    document.querySelector(".box").innerHTML = "I have selected universal selector";
+
+    // For Variables  --> use let const var
+    let a = 5.6;
+    a = a + 1;
+    console.log(`Value of a is ${a}`);
+    document.write(typeof a); // number
+
+    console.log(3 + "3");  // It will concatenate 
+    console.log(3 + "3");  // It will concatenate 
+
+    console.log(3 + +"3"); // 6
+    console.log(typeof +"4"); // +before a string converts it into a number
+    let b = 3 + "3";
+    console.log(typeof b);
+
+    // Objects in js
+
+    let obj1 = {
+        name: "jasmeet",
+        age: 21,
+        course: "btech",
+        id: 2001600
+    }
+    console.log(obj1.id);
+
+    document.getElementById("id").innerHTML = `My name is ${obj1.name}. Age is ${obj1.age}`;
+
+    // Arrays
+
+    let arr = [1,1,2,"Jasmeet",4678,true,0]
+    document.write(`<p>My array is -> ${arr} </p>`);
+    document.write(`<p style='color:red'>Value at 3rd index is ${arr[3]} </p>`);
+
+
+    function change() {
+        const colInput = document.getElementById('color');
+        colInput.addEventListener('input', function run(event) {
+            //console.log(event);
+            const sel = event.target.value;
+            //console.log(sel);   
+            document.querySelector("body").style.backgroundColor = sel;
+        });
+    }
+</script>
+
+</html>
